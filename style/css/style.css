@@ -1,0 +1,112 @@
+@import './reset.css';
+
+.card-item {
+  display: inline-block;
+  margin: 20px;
+  width: 350px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 4%;
+  box-shadow: 6px 6px 11px -1px rgba(0, 0, 0, 0.75);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-item::after,
+.card-item::before {
+  display: block;
+  content: '';
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.card-item::after {
+  top: -15px;
+  right: -65px;
+}
+
+.card-item::before {
+  bottom: -60px;
+  right: -20px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+h3 {
+  text-align: left;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 50px;
+  margin-left: 40px;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: left;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 40px;
+  margin-left: 40px;
+  text-transform: capitalize;
+}
+
+.card-item:nth-child(2n + 1) {
+  background: rgb(252, 145, 169);
+  background: linear-gradient(
+    270deg,
+    rgba(252, 145, 169, 1) 0%,
+    rgba(252, 138, 149, 1) 35%,
+    rgba(252, 186, 154, 1) 100%
+  );
+}
+.card-item:nth-child(2n) {
+  background: rgb(49, 154, 229);
+  background: linear-gradient(
+    270deg,
+    rgba(49, 154, 229, 1) 0%,
+    rgba(63, 162, 233, 1) 35%,
+    rgba(129, 200, 243, 1) 100%
+  );
+}
+.card-item:nth-child(3) {
+  background: rgb(37, 210, 191);
+  background: linear-gradient(
+    270deg,
+    rgba(37, 210, 191, 1) 0%,
+    rgba(57, 208, 185, 1) 35%,
+    rgba(120, 215, 207, 1) 100%
+  );
+}
+
+.properties {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 12px;
+  top: 35px;
+}
+
+.logo1 {
+  background: no-repeat url('../img/chart-line.svg');
+}
+.logo2 {
+  background: no-repeat url('../img/bookmark-outline.svg');
+}
+.logo3 {
+  background: no-repeat url('../img/diamond-stone.svg');
+}
